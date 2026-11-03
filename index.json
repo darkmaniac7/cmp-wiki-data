@@ -1,0 +1,125 @@
+{
+ "generated": "(see commit date)",
+ "license": "CC BY-SA 4.0",
+ "attribution": "cmp.wiki and the Discord handle each row credits",
+ "docs": "https://cmp.wiki/wiki/CMP_Wiki:For_agents",
+ "tables": [
+  {
+   "table": "Recipe",
+   "url": "https://cmp.wiki/data/Recipe.json",
+   "count": 43,
+   "fields": [
+    "pagetitle",
+    "page",
+    "model",
+    "quant",
+    "engine",
+    "engine_version",
+    "cards",
+    "card_count",
+    "topology",
+    "context",
+    "decode_tps",
+    "prefill_tps",
+    "vram_per_card",
+    "power_cap",
+    "driver",
+    "unlock_build",
+    "flags",
+    "status",
+    "tested_by",
+    "tested_on",
+    "source",
+    "files",
+    "model_family",
+    "engine_family",
+    "decode_single",
+    "decode_agg",
+    "agg_users",
+    "prefill_prompt",
+    "context_tokens",
+    "p2p",
+    "pcie_link",
+    "pcie_width",
+    "power_w",
+    "spec_decode",
+    "bench_note"
+   ]
+  },
+  {
+   "table": "Platform",
+   "url": "https://cmp.wiki/data/Platform.json",
+   "count": 23,
+   "fields": [
+    "pagetitle",
+    "page",
+    "board",
+    "cpu",
+    "bios_version",
+    "settings",
+    "gen2_result",
+    "rebar_result",
+    "p2p_result",
+    "os_driver",
+    "virtualization",
+    "cards",
+    "card_count",
+    "status",
+    "tested_by",
+    "source"
+   ]
+  },
+  {
+   "table": "Confirmation",
+   "url": "https://cmp.wiki/data/Confirmation.json",
+   "count": 59,
+   "fields": [
+    "pagetitle",
+    "page",
+    "confirmed_by",
+    "date",
+    "cards",
+    "result",
+    "numbers",
+    "notes"
+   ]
+  },
+  {
+   "table": "Unlocks",
+   "url": "https://cmp.wiki/data/Unlocks.json",
+   "count": 11,
+   "fields": [
+    "pagetitle",
+    "page",
+    "unlocks",
+    "driver_version",
+    "unlock_build",
+    "variant",
+    "steps_page",
+    "download",
+    "status",
+    "source"
+   ]
+  },
+  {
+   "table": "SellerReport",
+   "url": "https://cmp.wiki/data/SellerReport.json",
+   "count": 110,
+   "fields": [
+    "pagetitle",
+    "seller",
+    "sellergroup",
+    "marketplace",
+    "date",
+    "advertised",
+    "outcome",
+    "resolution",
+    "kind",
+    "evidence",
+    "reportedby",
+    "sources",
+    "anchor"
+   ]
+  }
+ ]
+}
