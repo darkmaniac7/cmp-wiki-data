@@ -7,7 +7,7 @@
   {
    "table": "Recipe",
    "url": "https://cmp.wiki/data/Recipe.json",
-   "count": 43,
+   "count": 44,
    "fields": [
     "pagetitle",
     "page",
@@ -49,7 +49,7 @@
   {
    "table": "Platform",
    "url": "https://cmp.wiki/data/Platform.json",
-   "count": 23,
+   "count": 24,
    "fields": [
     "pagetitle",
     "page",
@@ -72,7 +72,7 @@
   {
    "table": "Confirmation",
    "url": "https://cmp.wiki/data/Confirmation.json",
-   "count": 59,
+   "count": 62,
    "fields": [
     "pagetitle",
     "page",

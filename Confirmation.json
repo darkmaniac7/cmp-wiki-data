@@ -13,8 +13,19 @@
   "numbers",
   "notes"
  ],
- "count": 59,
+ "count": 62,
  "rows": [
+  {
+   "pagetitle": "Buying/Confirmation 1",
+   "page": "Buying",
+   "confirmed by": "neapopa",
+   "date": "2026-11-03",
+   "cards": "",
+   "result": "Reproduced",
+   "numbers": "a second card that came with its power connector glued; acetone removed the glue",
+   "notes": "Replying to @chrysos's report of a Xianyu card whose power connector the seller had glued to the housing, @neapopa: \"i've got one that had the pw connector glued as well. acetone works\". Confirms the glued connector and that acetone freed it, not the corrosion or the cap mod on @chrysos's card. '\"`UNIQ--templatestyles-00000004-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1528513735575081070/1567241735715950646 @neapopa],&#32;2026-11-03</span>",
+   "date__precision": "1"
+  },
   {
    "pagetitle": "DeepSeek V4 Flash 0731 on 4x 8 GB (allover326 PP4 DSpark)/Confirmation 1",
    "page": "DeepSeek V4 Flash 0731 on 4x 8 GB (allover326 PP4 DSpark)",
@@ -258,6 +269,17 @@
    "date__precision": "1"
   },
   {
+   "pagetitle": "Fans and ducts/Confirmation 9",
+   "page": "Fans and ducts",
+   "confirmed by": "gnasherrr",
+   "date": "2026-11-04",
+   "cards": "",
+   "result": "Reproduced",
+   "numbers": "no numbers posted; musical tones under inference load, sometimes like R2D2",
+   "notes": "Confirms the musical coil whine during inference that @anon33anon asked about (\"singing like a bird\") '\"`UNIQ--templatestyles-00000007-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1534370835220004885/1567637383544049765 @anon33anon],&#32;2026-11-04</span>: @gnasherrr has heard it on his own cards, the first time from any GPU; ordinary GPU coil whine is whirling, clicking or buzzing, \"never music tones like this\". '\"`UNIQ--templatestyles-00000009-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1534370835220004885/1567637830031646833 @gnasherrr],&#32;2026-11-04</span><br />'\"`UNIQ--templatestyles-0000000A-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1534370835220004885/1567638000354070541 @gnasherrr],&#32;2026-11-04</span><br />'\"`UNIQ--templatestyles-0000000B-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1534370835220004885/1567638933557346536 @gnasherrr],&#32;2026-11-04</span>",
+   "date__precision": "1"
+  },
+  {
    "pagetitle": "Full SM unlock/Confirmation 1",
    "page": "Full SM unlock",
    "confirmed by": "ghostinthedatacenter_87281",
@@ -288,6 +310,17 @@
    "result": "Reproduced",
    "numbers": "",
    "notes": "\"I got this too, it's great\", with two caveats: ear-piercing stock fans, and EPS-to-EPS cables are needed because adapters do not fit in the back section. Card count not stated in his message. '\"`UNIQ--templatestyles-00000004-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1534370835220004885/1564151316819877921 @danske1],&#32;2026-10-26</span>",
+   "date__precision": "1"
+  },
+  {
+   "pagetitle": "Gigabyte G292-Z20/Confirmation 3",
+   "page": "Gigabyte G292-Z20",
+   "confirmed by": "1a2b3c0967",
+   "date": "2026-11-04",
+   "cards": "",
+   "result": "Reproduced",
+   "numbers": "",
+   "notes": "EPS adapters do not fit; straight EPS-to-EPS cables from the riser work (second owner after danske1, 2026-10-26). His server came with 8-pin GPU (6+2) connectors, four in each quadrant, and an 8-pin GPU to 8-pin EPS adapter did not fit; Supermicro EPS-to-EPS cables connect the riser's EPS straight to the card's EPS with no other adapter, a tight squeeze but they fit, and he checked the cable wiring. '\"`UNIQ--templatestyles-00000005-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1518692084729511967/1567352875171192965 @1a2b3c0967],&#32;2026-11-04</span><br />'\"`UNIQ--templatestyles-00000007-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1518692084729511967/1567353652333514943 @1a2b3c0967],&#32;2026-11-04</span>",
    "date__precision": "1"
   },
   {

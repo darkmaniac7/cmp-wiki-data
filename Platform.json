@@ -21,7 +21,7 @@
   "tested_by",
   "source"
  ],
- "count": 23,
+ "count": 24,
  "rows": [
   {
    "pagetitle": "ASRock Rack ROMED8-2T",
@@ -112,6 +112,24 @@
    "status": "Reported",
    "tested by": "matstatman",
    "source": "https://discord.com/channels/1518634379604136178/1528826330454429706/1560411782588137553"
+  },
+  {
+   "pagetitle": "ASUS Z10PE-D8 WS",
+   "page": "ASUS Z10PE-D8 WS",
+   "board": "ASUS Z10PE-D8 WS",
+   "cpu": "Dual Intel Xeon E5 v3 (Haswell-EP), C612 chipset",
+   "bios version": "4101 (2019-06-12, the last release)",
+   "settings": "Above 4G Decoding enabled (Advanced, PCI Subsystem Settings; it ships disabled); slots bifurcated x8/x8; kernel parameters intel_iommu=on iommu=pt pcie_aspm=off",
+   "gen2 result": "Fails: both cards stay at Gen1 x4 with the Gen2 module options confirmed loaded",
+   "rebar result": "BAR1 65536 MiB on both cards (8 GB and 10 GB) with Above 4G Decoding on",
+   "p2p result": "",
+   "os driver": "nvidia-open 610.43.03, cmpunlocker v0.3 (tag f51da03), kernel 7.0.0-27-generic",
+   "virtualization": "Bare metal",
+   "cards": "both",
+   "card count": "",
+   "status": "Reported",
+   "tested by": "ahnguyen17",
+   "source": "https://github.com/Consensus-Protocol/cmp170hx/issues/2"
   },
   {
    "pagetitle": "Dell OptiPlex 7040m",
