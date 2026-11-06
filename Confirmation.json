@@ -313,17 +313,6 @@
    "date__precision": "1"
   },
   {
-   "pagetitle": "Gigabyte G292-Z20/Confirmation 3",
-   "page": "Gigabyte G292-Z20",
-   "confirmed by": "1a2b3c0967",
-   "date": "2026-11-04",
-   "cards": "",
-   "result": "Reproduced",
-   "numbers": "",
-   "notes": "EPS adapters do not fit; straight EPS-to-EPS cables from the riser work (second owner after danske1, 2026-10-26). His server came with 8-pin GPU (6+2) connectors, four in each quadrant, and an 8-pin GPU to 8-pin EPS adapter did not fit; Supermicro EPS-to-EPS cables connect the riser's EPS straight to the card's EPS with no other adapter, a tight squeeze but they fit, and he checked the cable wiring. '\"`UNIQ--templatestyles-00000005-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1518692084729511967/1567352875171192965 @1a2b3c0967],&#32;2026-11-04</span><br />'\"`UNIQ--templatestyles-00000007-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1518692084729511967/1567353652333514943 @1a2b3c0967],&#32;2026-11-04</span>",
-   "date__precision": "1"
-  },
-  {
    "pagetitle": "GLM 5.3 Flash on 2x 8 GB (ExLlamaV3 layer split)/Confirmation 1",
    "page": "GLM 5.3 Flash on 2x 8 GB (ExLlamaV3 layer split)",
    "confirmed by": "nestaa51",
@@ -409,6 +398,17 @@
    "result": "Reproduced",
    "numbers": "Release 1.4.0 on 4 cards at Gen2 x8, 200 W per card. TP4 INT4: one user 271 / 262 / 184 tok/s (structured / code / prose), eight users 756 / 733 / 495, prefill 1.9K / 2.0K at 16K / 64K. PP4 MM INT4: 144 / 136 / 99, eight users 650 / 647 / 423, prefill 4.8K / 7.4K. PP4 KV pool 2,320,328 tokens, reproduced exactly from the x16 figure. GSM8K 97.2 / 98.8, MMLU (300) 91.7, tools 24/24.",
    "notes": "Four of the eight cards in his box, measured against his own older 6-card engine. On x8 links PP4 matches the x16 numbers and TP4 decode reaches 90 to 98% of them; TP4 prefill is about 62% (1.9K against 3.1K) because x8 halves the prefill all-reduce bandwidth. The engine's outputs were bit-deterministic run to run. His configuration files are not reproduced (asked of the author). '\"`UNIQ--templatestyles-00000005-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1528826330454429706/1553458909250064597 @con3po7016],&#32;2026-09-26</span>",
+   "date__precision": "1"
+  },
+  {
+   "pagetitle": "GLM 5.3 on 8x 8 GB (cebeuq glm53-cmp170hx-recipe)/Confirmation 1",
+   "page": "GLM 5.3 on 8x 8 GB (cebeuq glm53-cmp170hx-recipe)",
+   "confirmed by": "darkmaniac7",
+   "date": "2026-11-04",
+   "cards": "8 GB",
+   "result": "Partly reproduced",
+   "numbers": "Same layout (TP2 x PP4, layers 22,20,20,16), 524,288-token context, KV pool 569,792 tokens. Lab bench, 1,024-token answers, median of 3: one stream at temperature 0, structured / code / prose 89.6 / 93.9 / 60.8 tok/s; sampled (temperature 0.9) code 93.3-94.6 and prose 61.3-62.0 tok/s over three runs; prefill 2,272 tok/s on a 17k-token prompt; a long-context chat at an 83k-token prompt, two turns of 2,000 tokens: first turn 67.5 tok/s (first token after 32.3 s), second turn 86.9 tok/s (first token after 8.3 s); 0 HTTP 5xx. Quality: 90.07% top-1 agreement with the lab's TP8 reference outputs (the lab's floor is 89.9%), NLL delta -0.69%. Accepted draft tokens per 2-token draft: 1.305 at temperature 0 (per position 0.754 / 0.551), 1.252 sampled (0.745 / 0.506), 1.385 on the long-context chat, 0.929 on raw sampled prose; 3.00 tokens per PipeSpec epoch. Load to ready from a local NVMe copy of the converted weights with a 450 MB/s container read cap: 558 s warm, 1,341 s cold.",
+   "notes": "The lab runs this recipe in production on its own eight 8 GB cards (64 GB, PCIe Gen2 x16, P2P on) with three additions of its own (published on 2026-11-05 and offered to the recipe as pull requests 1 to 3): the pipeline hand-off fix for TP2 (2026-10-27; the open question in the recipe's known limits), the grammar bitmask for draft tokens (2026-11-04, a port of the upstream vLLM fix, so json_schema, named tool choice and json_object work with speculative decoding), and probabilistic drafts for sampled requests under PipeSpec (2026-11-04). The lab's bench (1,024-token answers, median of 3, structured / code / prose) is not the author's chat bench (384 tokens, thinking on, mean per category), and its quality reference differs (TP8 reference outputs, not the author's NVFP4 goldens), so these numbers are not directly comparable with his. Before the probabilistic drafts (the recipe with the hand-off and grammar fixes only, same cards, same day): accepted draft tokens 1.303 at temperature 0, 1.191 sampled, 1.226 on the long-context chat, 0.829 on raw sampled prose; agreement 90.13%; sampled code 91.4-92.5 and prose 58.6-61.8 tok/s over three runs. Entered as partly reproduced: the layout, the context and the KV pool match the recipe exactly, but the lab's build carries three additions and the author's speed numbers were not re-measured on his bench. '\"`UNIQ--templatestyles-00000005-QINU`\"'<span class=\"cmpw-source\">Source: @darkmaniac7,&#32;2026-11-04&#32;(lab notes)</span>",
    "date__precision": "1"
   },
   {
@@ -571,9 +571,9 @@
    "confirmed by": "galygious",
    "date": "2026-10-08",
    "cards": "8 GB",
-   "result": "Partly reproduced",
+   "result": "Reproduced",
    "numbers": "No tok/s posted.",
-   "notes": "Reproduced the setup \"almost identically\" on a Proxmox host and added the huihui abliteration. Entered as partly reproduced because no numbers were posted. '\"`UNIQ--templatestyles-00000005-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1518695289278566450/1557608614318047253 @galygious],&#32;2026-10-08</span>",
+   "notes": "Reproduced the setup \"almost identically\" on a Proxmox host and added the huihui abliteration. No throughput figures were posted, so the numbers column is empty; the setup itself was reported as reproduced. '\"`UNIQ--templatestyles-00000005-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1518695289278566450/1557608614318047253 @galygious],&#32;2026-10-08</span>",
    "date__precision": "1"
   },
   {

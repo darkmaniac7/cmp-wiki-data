@@ -7,7 +7,7 @@
   {
    "table": "Recipe",
    "url": "https://cmp.wiki/data/Recipe.json",
-   "count": 44,
+   "count": 46,
    "fields": [
     "pagetitle",
     "page",
