@@ -72,7 +72,7 @@
   {
    "table": "Confirmation",
    "url": "https://cmp.wiki/data/Confirmation.json",
-   "count": 62,
+   "count": 63,
    "fields": [
     "pagetitle",
     "page",

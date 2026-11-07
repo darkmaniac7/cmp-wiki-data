@@ -13,7 +13,7 @@
   "numbers",
   "notes"
  ],
- "count": 62,
+ "count": 63,
  "rows": [
   {
    "pagetitle": "Buying/Confirmation 1",
@@ -431,6 +431,17 @@
    "result": "Reproduced",
    "numbers": "one good card in the batch he checked",
    "notes": "@globalapathy used @matstatman's probe tools the day <code>'\"`UNIQ--nowiki-00000006-QINU`\"'</code> was released and said they saved him from buying bad cards; only one card of the batch was good. He did not say which variant or which readout showed the problem. '\"`UNIQ--templatestyles-00000007-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1518695328008638516/1562131178524250145 @globalapathy],&#32;2026-10-20</span>",
+   "date__precision": "1"
+  },
+  {
+   "pagetitle": "Huananzhi H12D-8D/Confirmation 1",
+   "page": "Huananzhi H12D-8D",
+   "confirmed by": "68x0",
+   "date": "2026-11-05",
+   "cards": "",
+   "result": "Reproduced",
+   "numbers": "",
+   "notes": "P2P works on his own H12D-8D: \"I can confirm I got p2p working on my H12-8D\". No figures posted. '\"`UNIQ--templatestyles-00000004-QINU`\"'<span class=\"cmpw-source\">Source: [https://discord.com/channels/1518634379604136178/1534370835220004885/1567963288409743391 @68x0],&#32;2026-11-05</span>",
    "date__precision": "1"
   },
   {

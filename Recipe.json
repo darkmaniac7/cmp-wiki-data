@@ -401,7 +401,7 @@
    "power cap": "150 W per CMP (PRO 400 W)",
    "driver": "NVIDIA open 610.57.04 patched with Morrowmake/cmpunlocker 1f2c498 (profile 8gb)",
    "unlock build": "Morrowmake/cmpunlocker 1f2c498; modprobe RmForceEnableGen2=1, RMPcieLinkSpeed=0x1, ForceP2P=0x11",
-   "flags": "'\"`UNIQ--nowiki-00000079-QINU`\"'",
+   "flags": "'\"`UNIQ--nowiki-0000007A-QINU`\"'",
    "status": "Reported",
    "tested by": "anoane",
    "tested on": "2026-10-20",
