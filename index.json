@@ -3,11 +3,12 @@
  "license": "CC BY-SA 4.0",
  "attribution": "cmp.wiki and the Discord handle each row credits",
  "docs": "https://cmp.wiki/wiki/CMP_Wiki:For_agents",
+ "keys": "Row keys match the names in \"fields\" (underscores, for example decode_tps). The older spelling with a space (\"decode tps\") is kept in every row with the same value, so existing readers keep working.",
  "tables": [
   {
    "table": "Recipe",
    "url": "https://cmp.wiki/data/Recipe.json",
-   "count": 46,
+   "count": 47,
    "fields": [
     "pagetitle",
     "page",
@@ -72,7 +73,7 @@
   {
    "table": "Confirmation",
    "url": "https://cmp.wiki/data/Confirmation.json",
-   "count": 63,
+   "count": 65,
    "fields": [
     "pagetitle",
     "page",
