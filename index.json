@@ -50,7 +50,7 @@
   {
    "table": "Platform",
    "url": "https://cmp.wiki/data/Platform.json",
-   "count": 24,
+   "count": 27,
    "fields": [
     "pagetitle",
     "page",
